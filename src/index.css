@@ -1,0 +1,51 @@
+:root {/*インデックスはほかのページすべて*/
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;/*行間を何倍にするか*/
+  font-weight: 400;
+
+  color-scheme: light dark;/*OSのダークモード、ライトモード選択できる*/
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #7e7c7c;
+
+  font-synthesis: none;/*太字や斜体を勝手に合成しないようにする*/
+  text-rendering: optimizeLegibility;/*文字描画の最適化系*/
+  -webkit-font-smoothing: antialiased;/*見た目の微妙な違いを消すためのテンプレらしい*/
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: 3.2em;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 10px 20px;/*枠を広げるイメージ*/
+  margin-left: 10px;/*input欄と幅を開ける（要素を離す）*/
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;/*親要素の書体を受け継ぐってことらしい*/
+  background-color: #352598;
+  cursor: pointer;
+  transition: border-color 0.25s;/*変化を滑らかにする*/
+}
+button:hover {
+  border-color: white;/*ちょっとシャレたボタンにしてる*/
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {/*これはライトモードの場合だけ適用されるCSS　　そんなのあるんや*/
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

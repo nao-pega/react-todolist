@@ -1,0 +1,45 @@
+/*ここはこのページに対してのみ*/
+input[type="checkbox"] {
+  width: 19px;    /* 幅 */
+  height: 19px;   /* 高さ */
+  cursor: pointer; /* カーソルをポインターに */
+}
+
+input[type="Todotext"] {
+  width: 8cm;    /* 幅 */
+  height: 0.7cm;   /* 高さ */
+  cursor: pointer; /* カーソルをポインターに */
+}
+
+/* スマホサイズ（最大幅600px）向けの調整 */
+@media (max-width: 600px) {
+  div {
+    padding: 10px !important;  /* inline styleより強い優先度を与えたい時は !important を付ける */
+  }
+
+  h1 {
+    font-size: 1.8em; /* フォントを小さく */
+    text-align: center;
+  }
+
+  ul {
+    padding-left: 0 !important;
+  }
+
+  li {
+    margin: 8px 0 !important;
+    font-size: 0.9em;
+  }
+
+  input[type="text"], button {
+    width: 100%; /* 入力欄とボタンを横幅いっぱいに */
+    margin-top: 8px;
+    box-sizing: border-box;
+  }
+
+  /* チェックボックスを少し大きめに */
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+  }
+}
